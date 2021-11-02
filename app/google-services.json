@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "28874535445",
+    "firebase_url": "https://appmovilg1-default-rtdb.firebaseio.com",
+    "project_id": "appmovilg1",
+    "storage_bucket": "appmovilg1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28874535445:android:0eaa447aa370f6c621141c",
+        "android_client_info": {
+          "package_name": "cl.tofcompany.appmovilg1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28874535445-q94eosc253nmo8ji24etl43e1637omjf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk0wccARsiz-NqThIwjZBT-TCleWZkhZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28874535445-q94eosc253nmo8ji24etl43e1637omjf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
