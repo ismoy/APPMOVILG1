@@ -3,15 +3,15 @@ package cl.tofcompany.appmovilg1.provider;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class CategoriesProvider {
+public class CategoriesBebidasProvider {
 
     DatabaseReference mDatabase;
 
-    public CategoriesProvider() {
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("Categories");
+    public CategoriesBebidasProvider() {
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("CategoriaBebidas");
     }
 
-    public DatabaseReference getPrecios(){
+    public DatabaseReference getCategories(){
         return mDatabase;
     }
 }

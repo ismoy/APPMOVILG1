@@ -47,13 +47,9 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHo
         holder.feeEachItem.setText(String.valueOf(foodModels.get(position).getFee()));
         holder.totalEachItem.setText(String.valueOf(Math.round((foodModels.get(position).getNumberInCard() * foodModels.get(position).getFee()) * 100.0) / 100.0));
         holder.num.setText(String.valueOf(foodModels.get(position).getNumberInCard()));
-
-        int drawableResourceId = holder.itemView.getContext().getResources().getIdentifier(foodModels.get(position).getPic(), "drawable", holder.itemView.getContext().getPackageName());
-         //cargar foto del producto
         Glide.with(holder.itemView.getContext())
-                .load(drawableResourceId)
+                .load(foodModels.get(position).getPic())
                 .into(holder.pic);
-
 
         //clic en el icono mas para agregar productos en carrito
         holder.plusItem.setOnClickListener(v -> managementCart.plusNumberFood(foodModels, position, new ChangeNumberItemsListener() {

@@ -14,48 +14,49 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
+import cl.tofcompany.appmovilg1.Activities.MainActivity;
+import cl.tofcompany.appmovilg1.Activities.ShowDetailsActivity;
 import cl.tofcompany.appmovilg1.Model.FoodModel;
 import cl.tofcompany.appmovilg1.R;
-import cl.tofcompany.appmovilg1.Activities.ShowDetailsActivity;
 
-public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.ViewHolder> {
-    ArrayList<FoodModel> foodModels;
+public class CategoryPostreAdapter extends RecyclerView.Adapter<CategoryPostreAdapter.ViewHolder> {
+    ArrayList<FoodModel> foodModelEntradas;
 
-    public PopularAdapter(ArrayList<FoodModel> FoodModels) {
-        this.foodModels = FoodModels;
+    public CategoryPostreAdapter(MainActivity mainActivity, ArrayList<FoodModel> foodModelEntradas) {
+        this.foodModelEntradas = foodModelEntradas;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.viewholder_popular,parent,false);
+        View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.viewholder_platoentrada,parent,false);
         return new ViewHolder(inflate);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-      holder.categoryname.setText(foodModels.get(position).getTitle());
-      holder.categoryfee.setText(String.valueOf(foodModels.get(position).getFee()));
-      int drawableResourceId=holder.itemView.getContext().getResources().getIdentifier(foodModels.get(position).getPic(),"drawable",holder.itemView.getContext().getPackageName());
+      holder.categoryname.setText(foodModelEntradas.get(position).getTitle());
+        holder.categoryfee.setText(String.valueOf(foodModelEntradas.get(position).getFee()));
         Glide.with(holder.itemView.getContext())
-                .load(drawableResourceId)
+                .load(foodModelEntradas.get(position).getPic())
                 .into(holder.categoryimage);
         holder.addbtn.setOnClickListener(v->{
             Intent intent = new Intent(holder.itemView.getContext(), ShowDetailsActivity.class);
-            intent.putExtra("object",foodModels.get(position));
+            intent.putExtra("object",foodModelEntradas.get(position));
             holder.itemView.getContext().startActivity(intent);
         });
     }
 
     @Override
     public int getItemCount() {
-        return foodModels.size();
+        return foodModelEntradas.size();
     }
-    public class ViewHolder extends RecyclerView.ViewHolder{
-         TextView categoryname;
-         TextView categoryfee;
-         TextView addbtn;
-         ImageView categoryimage;
+    public static class ViewHolder extends RecyclerView.ViewHolder{
+        TextView categoryname;
+        TextView categoryfee;
+        TextView addbtn;
+        ImageView categoryimage;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             categoryname=itemView.findViewById(R.id.title);

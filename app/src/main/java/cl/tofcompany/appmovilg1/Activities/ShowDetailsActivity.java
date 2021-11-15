@@ -2,6 +2,7 @@ package cl.tofcompany.appmovilg1.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -9,6 +10,7 @@ import com.bumptech.glide.Glide;
 
 import cl.tofcompany.appmovilg1.Helper.ManagementCart;
 import cl.tofcompany.appmovilg1.Model.FoodModel;
+import cl.tofcompany.appmovilg1.Model.FoodModelEntradas;
 import cl.tofcompany.appmovilg1.databinding.ActivityShowDetailsBinding;
 
 public class ShowDetailsActivity extends AppCompatActivity {
@@ -30,18 +32,15 @@ public class ShowDetailsActivity extends AppCompatActivity {
     }
     private void getBundle() {
         object = (FoodModel) getIntent().getSerializableExtra("object");
-
-        int drawableResourceId = this.getResources().getIdentifier(object.getPic(), "drawable", this.getPackageName());
-
         Glide.with(this)
-                .load(drawableResourceId)
+                .load(object.getPic())
                 .into(showDetailsBinding.foodPic);
+
 
         showDetailsBinding.titleTxt.setText(object.getTitle());
         showDetailsBinding.priceTxt.setText("$" + object.getFee());
         showDetailsBinding.descriptionTxt.setText(object.getDescription());
         showDetailsBinding.numberOrderTxt.setText(String.valueOf(numberOrder));
-
         showDetailsBinding.plusBtn.setOnClickListener(v -> {
             numberOrder = numberOrder + 1;
             showDetailsBinding.numberOrderTxt.setText(String.valueOf(numberOrder));
@@ -57,7 +56,8 @@ public class ShowDetailsActivity extends AppCompatActivity {
         showDetailsBinding.addToCardBtn.setOnClickListener(v -> {
             object.setNumberInCard(numberOrder);
             managementCart.insertFood(object);
-            startActivity(new Intent(ShowDetailsActivity.this, MainActivity.class));
+                startActivity(new Intent(ShowDetailsActivity.this, MainActivity.class));
+
         });
     }
 

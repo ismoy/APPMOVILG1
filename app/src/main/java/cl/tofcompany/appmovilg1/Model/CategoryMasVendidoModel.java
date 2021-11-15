@@ -1,13 +1,13 @@
 package cl.tofcompany.appmovilg1.Model;
 
-public class CategoryModel {
+public class CategoryMasVendidoModel {
 private String title;
 private String pic;
 
-    public CategoryModel() {
+    public CategoryMasVendidoModel() {
     }
 
-    public CategoryModel(String title, String pic) {
+    public CategoryMasVendidoModel(String title, String pic) {
         this.title = title;
         this.pic = pic;
     }

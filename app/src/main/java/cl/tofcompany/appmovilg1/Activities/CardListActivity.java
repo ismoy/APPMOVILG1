@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -85,6 +86,7 @@ public class CardListActivity extends AppCompatActivity {
         taxTxt.setText("Sol " + tax);
         deliveryTxt.setText("Sol " + delivery);
         totalTxt.setText("Sol " + total);
+
     }
 
     private void initView() {
@@ -98,8 +100,8 @@ public class CardListActivity extends AppCompatActivity {
         pagar = findViewById(R.id.pagar);
 
         pagar.setOnClickListener(v->{
-            Toast.makeText(CardListActivity.this, "Escanea el codigo QR para pagar y ingrese el monto", Toast.LENGTH_SHORT).show();
             finish();
+            Toast.makeText(CardListActivity.this, "Gracias por su compra", Toast.LENGTH_SHORT).show();
             TinyDB db = new TinyDB(this);
             //eliminar los articulos despues de comprar
             db.clear();

@@ -20,14 +20,18 @@
         <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/drawable/search.xml" value="0.1859375" />
         <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/activity_card_list.xml" value="0.1" />
         <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/activity_login.xml" value="0.13931623931623932" />
-        <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/activity_main.xml" value="0.14814814814814814" />
+        <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/activity_register.xml" value="0.13931623931623932" />
         <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/activity_show_details.xml" value="0.1" />
+        <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/activity_show_details_entrada.xml" value="0.13931623931623932" />
         <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/activity_splash.xml" value="0.14814814814814814" />
         <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/viewholder.xml" value="0.13518518518518519" />
+        <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/viewholder_bebidas.xml" value="0.13931623931623932" />
         <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/viewholder_card.xml" value="0.13931623931623932" />
         <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/viewholder_cart.xml" value="0.13931623931623932" />
         <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/viewholder_cat.xml" value="0.13931623931623932" />
+        <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/viewholder_masvendido.xml" value="0.13931623931623932" />
+        <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/viewholder_platoentrada.xml" value="0.1" />
         <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/viewholder_platofondo.xml" value="0.13931623931623932" />
         <entry key="..\:/Users/beliz/Desktop/APPMOVILG1/app/src/main/res/layout/viewholder_popular.xml" value="0.13931623931623932" />
       </map>
