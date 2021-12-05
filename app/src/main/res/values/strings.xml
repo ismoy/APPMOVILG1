@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">APPMOVILG1</string>
+    <string name="facebook_app_id">1242776986234892</string>
+    <string name="fb_login_protocol_scheme">fb1242776986234892</string>
     <string name="chanchoalpalo">Ingredientes\n"
                 "- 1 copa de pisco peruano.\n"
                 "- 2 cdas de  sillau\n"

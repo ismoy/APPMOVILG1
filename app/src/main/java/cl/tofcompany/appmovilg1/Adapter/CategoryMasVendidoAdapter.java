@@ -1,6 +1,5 @@
 package cl.tofcompany.appmovilg1.Adapter;
 
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,11 +15,9 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-import cl.tofcompany.appmovilg1.Activities.MainActivity;
-import cl.tofcompany.appmovilg1.Model.CategoryMasVendidoModel;
-import cl.tofcompany.appmovilg1.Model.FoodModel;
+import cl.tofcompany.appmovilg1.View.Home.MainActivity;
+import cl.tofcompany.appmovilg1.Entities.CategoryMasVendidoModel;
 import cl.tofcompany.appmovilg1.R;
-import cl.tofcompany.appmovilg1.Activities.ShowDetailsActivity;
 
 public class CategoryMasVendidoAdapter extends RecyclerView.Adapter<CategoryMasVendidoAdapter.ViewHolder> {
     ArrayList<CategoryMasVendidoModel> masVendidoModels;

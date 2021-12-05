@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.ShowDetailsActivity">
+    tools:context=".View.ShowDetails.ShowDetailsActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -70,14 +70,15 @@
                 android:textColor="#373b54"
                 android:textSize="18sp"
                 android:textStyle="bold" />
+
             <ImageView
                 android:id="@+id/plusBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/plus"
                 android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
                 android:layout_toEndOf="@id/numberOrderTxt"
-                android:layout_marginStart="10dp"/>
+                app:srcCompat="@drawable/plus" />
         </RelativeLayout>
 
 

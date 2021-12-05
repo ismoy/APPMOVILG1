@@ -8,18 +8,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-import cl.tofcompany.appmovilg1.Activities.MainActivity;
-import cl.tofcompany.appmovilg1.Activities.ShowDetailsActivity;
-import cl.tofcompany.appmovilg1.Model.FoodModel;
-import cl.tofcompany.appmovilg1.Model.FoodModelEntradas;
+import cl.tofcompany.appmovilg1.View.Home.MainActivity;
+import cl.tofcompany.appmovilg1.View.ShowDetails.ShowDetailsActivity;
+import cl.tofcompany.appmovilg1.Entities.FoodModel;
 import cl.tofcompany.appmovilg1.R;
 
 public class CategoryPlatoEntradaAdapter extends RecyclerView.Adapter<CategoryPlatoEntradaAdapter.ViewHolder> {

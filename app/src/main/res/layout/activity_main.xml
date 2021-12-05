@@ -6,7 +6,7 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:layout_height="match_parent"
-    tools:context=".Activities.MainActivity">
+    tools:context=".View.Home.MainActivity">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -213,6 +213,7 @@
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintVertical_bias="1.0" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <TextView
@@ -387,6 +388,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/cerrarsession"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
@@ -400,7 +402,6 @@
                         app:tint="@color/black" />
 
                     <TextView
-                        android:id="@+id/cerrarsession"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="cerrar sesión"

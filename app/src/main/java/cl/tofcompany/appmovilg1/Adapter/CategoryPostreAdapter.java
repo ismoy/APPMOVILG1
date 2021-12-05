@@ -14,9 +14,9 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-import cl.tofcompany.appmovilg1.Activities.MainActivity;
-import cl.tofcompany.appmovilg1.Activities.ShowDetailsActivity;
-import cl.tofcompany.appmovilg1.Model.FoodModel;
+import cl.tofcompany.appmovilg1.View.Home.MainActivity;
+import cl.tofcompany.appmovilg1.View.ShowDetails.ShowDetailsActivity;
+import cl.tofcompany.appmovilg1.Entities.FoodModel;
 import cl.tofcompany.appmovilg1.R;
 
 public class CategoryPostreAdapter extends RecyclerView.Adapter<CategoryPostreAdapter.ViewHolder> {

@@ -15,9 +15,9 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-import cl.tofcompany.appmovilg1.Helper.ManagementCart;
-import cl.tofcompany.appmovilg1.Interface.ChangeNumberItemsListener;
-import cl.tofcompany.appmovilg1.Model.FoodModel;
+import cl.tofcompany.appmovilg1.Model.Helper.ManagementCart;
+import cl.tofcompany.appmovilg1.Entities.Interface.ChangeNumberItemsListener;
+import cl.tofcompany.appmovilg1.Entities.FoodModel;
 import cl.tofcompany.appmovilg1.R;
 
 
